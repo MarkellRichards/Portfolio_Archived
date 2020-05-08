@@ -31,12 +31,13 @@ h3 {
   background: linear-gradient(
     180deg,
     rgba(225, 199, 130, 1) 0%,
-    rgba(214, 192, 130, 1) 15%,
+    rgba(214, 192, 130, 1) 5%,
     rgba(126, 135, 131, 1) 25%,
     rgba(61, 93, 132, 1) 50%,
     rgba(17, 64, 132, 1) 75%,
-    rgba(17, 64, 132, 1) 100%
+    rgba(17, 64, 132, 1) 93%
   );
+  height: 95vh;
   color: #fff;
   text-align: center;
   overflow: hidden;
@@ -46,5 +47,32 @@ h3 {
 }
 
 #showcase-container {
-  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-color-primary {
+  color: #00275a;
+  background-color: rgba(225, 199, 130, 1);
+  text-transform: uppercase;
+}
+
+.btn-color-primary:hover {
+  color: rgba(225, 199, 130, 1);
+  background: #00275a;
+}
+.btn-outline-primary {
+  color: rgba(225, 199, 130, 1);
+  outline-color: rgba(225, 199, 130, 1);
+  outline-width: thick;
+  text-transform: uppercase;
+}
+
+.btn-outline-gold {
+  border: 2px solid rgba(225, 199, 130, 1);
+  background-color: none;
+  color: rgba(225, 199, 130, 1);
+  text-transform: uppercase;
 }

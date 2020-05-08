@@ -5,25 +5,23 @@ function Showcase(props) {
   return (
     <section id="showcase">
       <div
-        className="container-fluid justify-contenter-center align-items-center"
+        className="container-fluid justify-content-center align-items-center"
         id="showcase-container"
       >
         <img
           src="./assets/images/logoOutline.svg"
-          width="400"
+          width="500"
           height="auto"
           alt=""
           className="mt-5"
         />
-        <h2>Full-Stack Developer & UI/UX Designer</h2>
-
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#ffffff"
-            fill-opacity="1"
-            d="M0,288L60,256C120,224,240,160,360,160C480,160,600,224,720,245.3C840,267,960,245,1080,197.3C1200,149,1320,75,1380,37.3L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-          ></path>
-        </svg>
+        <h1 className="mt-3">Full-Stack Developer & UI/UX Designer</h1>
+        <Link to="#contact" className="btn btn-lg btn-color-primary mx-4 my-3">
+          Hire Me
+        </Link>
+        <Link to="#projects" className="btn btn-lg btn-outline-gold mx-4 my-3">
+          View Projects
+        </Link>
       </div>
     </section>
   );
