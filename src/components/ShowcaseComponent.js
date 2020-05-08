@@ -15,12 +15,15 @@ function Showcase(props) {
           alt=""
           className="mt-5"
         />
-        <h1 className="mt-3">Full-Stack Developer & UI/UX Designer</h1>
-        <Link to="#contact" className="btn btn-lg btn-color-primary mx-4 my-3">
+        <h1 className="mt-3 mb-5">Full-Stack Developer & UI/UX Designer</h1>
+        <Link to="#contact" className="button button-primary mx-5">
           Hire Me
         </Link>
-        <Link to="#projects" className="btn btn-lg btn-outline-gold mx-4 my-3">
-          View Projects
+        <Link
+          to="#projects"
+          className="button button-outline-secondary mx-4 my-3"
+        >
+          Projects
         </Link>
       </div>
     </section>
