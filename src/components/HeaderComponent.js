@@ -7,7 +7,7 @@ import {
   Navbar,
   NavbarBrand,
 } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 class Header extends Component {
   constructor(props) {
@@ -26,16 +26,21 @@ class Header extends Component {
     });
   }
 
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   render() {
     return (
       <Navbar dark sticky="top" expand="md">
         <div className="container">
-          <NavbarBrand className="mr-auto" href="/">
+          <NavbarBrand className="mr-auto">
             <img
               src="/assets/images/logoOutline.svg"
               height="auto"
               width="60"
               alt="MR Logo"
+              onClick={this.scrollToTop}
             />
           </NavbarBrand>
           <NavbarToggler onClick={this.toggleNav} />
@@ -46,24 +51,56 @@ class Header extends Component {
           >
             <Nav navbar className="justify-content-end">
               <NavItem>
-                <NavLink className="nav-link" to="#story">
+                <Link
+                  activeClass="active"
+                  to="story"
+                  spy={true}
+                  smooth={true}
+                  offset={-85}
+                  duration={300}
+                  className="nav-link"
+                >
                   My Story
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink className="nav-link" to="#services">
+                <Link
+                  activeClass="active"
+                  to="services"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                  className="nav-link"
+                >
                   Services
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink className="nav-link" to="#portfolio">
+                <Link
+                  activeClass="active"
+                  to="Portfolio"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                  className="nav-link"
+                >
                   Portfolio
-                </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink className="nav-link" to="#contact">
+                <Link
+                  activeClass="active"
+                  to="section1"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                  className="nav-link"
+                >
                   Contact
-                </NavLink>
+                </Link>
               </NavItem>
             </Nav>
           </Collapse>

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Showcase from './ShowcaseComponent';
+import About from './AboutComponent';
+import Experience from './ExperienceComponent';
 // import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
@@ -14,6 +16,8 @@ class Main extends Component {
       <div>
         <Header />
         <Showcase />
+        <About />
+        <Experience />
       </div>
     );
   }

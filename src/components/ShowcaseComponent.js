@@ -10,20 +10,13 @@ function Showcase(props) {
       >
         <img
           src="./assets/images/logoOutline.svg"
-          width="500"
-          height="auto"
           alt=""
-          className="mt-5"
+          className="responsive-hero-img"
         />
         <h1 className="mt-3 mb-5">Full-Stack Developer & UI/UX Designer</h1>
-        <Link to="#contact" className="button button-primary mx-5">
-          Hire Me
-        </Link>
-        <Link
-          to="#projects"
-          className="button button-outline-secondary mx-4 my-3"
-        >
-          Projects
+
+        <Link to="#projects" className="btn btn-lg btn-site btn-site-primary">
+          Portfolio
         </Link>
       </div>
     </section>
