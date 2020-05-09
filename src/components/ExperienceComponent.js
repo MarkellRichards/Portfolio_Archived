@@ -55,19 +55,7 @@ function Experience(props) {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2020"
-          iconStyle={{ background: 'rgb(225, 199, 130)', color: '#fff' }}
-          icon={<SchoolIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Full-Stack Developer Bootcamp
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Nucamp</h4>
-          <p>Bootstrap, React, React Native, NodeJS, MongoDB</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2020"
+          date="2020-2022"
           iconStyle={{ background: 'rgb(225, 199, 130)', color: '#fff' }}
           icon={<SchoolIcon />}
         >
@@ -86,6 +74,19 @@ function Experience(props) {
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
+            Full-Stack Developer Bootcamp
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">Nucamp</h4>
+          <p>Bootstrap, React, React Native, NodeJS, MongoDB</p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="2017-2019"
+          iconStyle={{ background: 'rgb(225, 199, 130)', color: '#fff' }}
+          icon={<SchoolIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
             Bachelors of Information Technology
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
@@ -95,7 +96,7 @@ function Experience(props) {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2020"
+          date="2015"
           iconStyle={{ background: 'rgb(225, 199, 130)', color: '#fff' }}
           icon={<SchoolIcon />}
         >

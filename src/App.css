@@ -31,6 +31,7 @@ a {
 
 .nav-link {
   color: white !important;
+  cursor: pointer;
 }
 
 .nav-item > .active {
@@ -108,4 +109,23 @@ a {
 }
 .vertical-timeline::before {
   background: white;
+}
+
+/* Services */
+#services {
+  background: url('/assets/images/services.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+#service-card-img {
+  height: 100px;
+  width: 100px;
+}
+
+.card-title {
+  margin: 0;
 }
