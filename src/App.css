@@ -93,6 +93,8 @@ a {
   max-width: 500px;
 }
 
+/* story */
+
 /* Education */
 #education {
   background: url('/assets/images/macbook.jpg') no-repeat center center;
@@ -128,4 +130,16 @@ a {
 
 .card-title {
   margin: 0;
+}
+
+/* Process */
+#process {
+  color: white;
+  background: #00275a;
+}
+
+/* Portfolio */
+.filter {
+  text-transform: uppercase;
+  font-weight: bold;
 }

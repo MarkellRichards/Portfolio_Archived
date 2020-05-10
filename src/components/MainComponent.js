@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { SERVICES } from '../shared/services';
 import Header from './HeaderComponent';
-import Showcase from './ShowcaseComponent';
+import Home from './HomeComponent';
 import About from './AboutComponent';
-import Experience from './ExperienceComponent';
+import Portfolio from './PortfolioComponent';
 import Services from './ServicesComponent';
-// import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
+// import Portfolio from './PortfolioComponent';
 
 class Main extends Component {
   constructor(props) {
@@ -19,10 +20,17 @@ class Main extends Component {
     return (
       <div>
         <Header />
-        <Showcase />
-        <About />
-        <Experience />
-        <Services services={this.state.services} />
+        <Switch>
+          <Route path="/home" component={Home} />
+          <Route path="/about" component={About} />
+          <Route
+            exact
+            path="/services"
+            render={() => <Services services={this.state.services} />}
+          />
+          <Route path="/portfolio" component={Portfolio} />
+          <Redirect to="/home" />
+        </Switch>
       </div>
     );
   }
