@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { SERVICES } from '../shared/services';
-import { WEB } from '../shared/web';
+import { PROJECTS } from '../shared/projects';
 import Header from './HeaderComponent';
 import Home from './HomeComponent';
 import About from './AboutComponent';
@@ -16,7 +16,7 @@ class Main extends Component {
     super(props);
     this.state = {
       services: SERVICES,
-      web: WEB,
+      projects: PROJECTS,
     };
   }
 
@@ -25,7 +25,7 @@ class Main extends Component {
       return (
         <ProjectInfo
           project={
-            this.state.web.filter(
+            this.state.projects.filter(
               (project) => project.id === +match.params.projectID
             )[0]
           }
@@ -46,7 +46,7 @@ class Main extends Component {
           <Route
             exact
             path="/portfolio"
-            render={() => <Portfolio web={this.state.web} />}
+            render={() => <Portfolio projects={this.state.projects} />}
           />
           <Route path="/portfolio/:projectID" component={ProjectInfoPage} />
           <Route path="/contact" component={Contact} />

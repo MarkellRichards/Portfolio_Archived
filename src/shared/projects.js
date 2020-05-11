@@ -1,4 +1,4 @@
-export const WEB = [
+export const PROJECTS = [
   {
     id: 0,
     image: '/assets/images/portfolio-mockup.jpeg',
@@ -14,5 +14,12 @@ export const WEB = [
     technology: ['HTML5', 'CSS3', 'Bootstrap 4', 'React'],
     notable: ['Dynamic Routing', 'Responsive'],
     category: 'web',
+  },
+  {
+    id: 1,
+    image: '/assets/images/front-bsn-card.jpg',
+    title: 'Business Card',
+    technology: ['Adobe Illustrator', 'Adobe InDesign'],
+    category: 'graphic',
   },
 ];
