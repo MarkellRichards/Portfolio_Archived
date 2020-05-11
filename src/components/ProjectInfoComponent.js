@@ -10,7 +10,22 @@ import {
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-function RenderProject({ project }) {
+function RenderWeb({ project }) {
+  if (project) {
+    return (
+      <div className="col-md-5 m-1">
+        <Card>
+          <CardImg top src={project.image} alt={project.title} />
+          <CardBody>
+            <CardText>{project.description}</CardText>
+          </CardBody>
+        </Card>
+      </div>
+    );
+  }
+  return <div />;
+}
+function RenderGraphic({ project }) {
   if (project) {
     return (
       <div className="col-md-5 m-1">
@@ -27,7 +42,7 @@ function RenderProject({ project }) {
 }
 
 function ProjectInfo(props) {
-  if (props.project) {
+  if (props.project.category === 'web') {
     return (
       <div className="container">
         <div className="row">
@@ -43,7 +58,27 @@ function ProjectInfo(props) {
           </div>
         </div>
         <div className="row">
-          <RenderProject project={props.project} />
+          <RenderWeb project={props.project} />
+        </div>
+      </div>
+    );
+  } else if (props.project.category === 'graphic') {
+    return (
+      <div className="container">
+        <div className="row">
+          <div className="col text-center">
+            <Breadcrumb>
+              <BreadcrumbItem>
+                <Link to="/portfolio">Portfolio</Link>
+              </BreadcrumbItem>
+              <BreadcrumbItem active>{props.project.title}</BreadcrumbItem>
+            </Breadcrumb>
+            <h2>{props.project.title}</h2>
+            <hr />
+          </div>
+        </div>
+        <div className="row">
+          <RenderGraphic project={props.project} />
         </div>
       </div>
     );

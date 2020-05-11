@@ -36,10 +36,10 @@ function RenderGraphicProject({ project }) {
     <Card>
       <Link to={`/portfolio/${project.id}`}>
         <CardImg width="100%" src={project.image} alt={project.title} />
+        <CardTitle className="text-center">
+          <h2>{project.title}</h2>
+        </CardTitle>
       </Link>
-      <CardTitle className="text-center">
-        <h2>{project.title}</h2>
-      </CardTitle>
     </Card>
   );
 }
@@ -73,13 +73,13 @@ function Portfolio(props) {
         </div>
       </div>
       <div className="row">
-        <div className="col-12">
+        <div className="col-12 text-center my-4">
           <h2>Web Development</h2>
         </div>
         {web}
       </div>
       <div className="row">
-        <div className="col-12">
+        <div className="col-12 text-center my-4">
           <h2>Graphic & UI/UX Design</h2>
         </div>
         {graphic}
