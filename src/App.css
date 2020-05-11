@@ -137,3 +137,38 @@ a {
   text-transform: uppercase;
   font-weight: bold;
 }
+
+.site-footer {
+  color: white;
+  background: #00275a;
+  padding: 25px 0;
+}
+
+.site-footer a {
+  color: white;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 60px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.carousel-caption {
+  opacity: 0;
+}
+
+.caoursel-item {
+  height: 100%;
+}
+
+#graphicInfo {
+  padding-bottom: 50px;
+}
