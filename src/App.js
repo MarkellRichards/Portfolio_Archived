@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Main from './components/MainComponent';
 import { BrowserRouter } from 'react-router-dom';
+import ScrollToTop from 'react-router-scroll-top';
 import './App.css';
 
 class App extends Component {
@@ -8,7 +9,9 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <Main />
+          <ScrollToTop>
+            <Main />
+          </ScrollToTop>
         </div>
       </BrowserRouter>
     );

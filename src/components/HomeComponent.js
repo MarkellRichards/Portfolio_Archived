@@ -1,51 +1,237 @@
 import React from 'react';
-
 import { Link } from 'react-router-dom';
+import { Card, CardImg, CardText, CardTitle, CardBody } from 'reactstrap';
 
 function Home(props) {
   return (
     <>
       <section id="showcase">
-        <div
-          className="container-fluid justify-content-center align-items-center"
-          id="showcase-container"
-        >
-          <img
-            src="./assets/images/logoOutline.svg"
-            alt=""
-            className="responsive-hero-img"
-          />
-          <h1 className="mt-3 mb-5">Full-Stack Developer & UI/UX Designer</h1>
-
-          <Link
-            to="/portfolio"
-            className="btn btn-lg btn-site btn-site-primary"
-          >
-            Portfolio
-          </Link>
-        </div>
-      </section>
-      <section id="process">
-        <div className="container-fluid">
+        <div className="container " id="showcase-container">
           <div className="row">
-            <div className="col-12 mt-5 text-center">
-              <h1>From Design to Development</h1>
+            <div className="col-12 text-md-right">
+              <h1 className="mt-3 mb-5 ">Designer & Full-Stack Developer</h1>
             </div>
           </div>
           <div className="row">
-            <div className="col-md-3 text-center">
-              <img
-                className="rounded-circle"
-                src="./assets/images/macBook.jpg"
-                alt="placeholder"
-                height="100"
-                width="100"
-              ></img>
-              <h4>Planning</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis eaque ab voluptas magni ipsa nesciunt.
+            <div className="col-md-6 offset-md-6">
+              <Link
+                to="/portfolio"
+                className="btn btn-lg btn-site btn-site-gold text-uppercase"
+              >
+                Portfolio
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 text-center">
+              <h1 className="mt-3 custom-text-primary">Hello</h1>
+              <h1 className="mb-4 custom-text-primary">I am Markell</h1>
+              <p className="text-md-justify mb-5 px-4">
+                I just started my journey as a freelance graphic designer and
+                web developer. Throughout my journey, I have had opportunities
+                to grow as a developer by attending a full-stack developer
+                bootcamp, utilizing my STEM education, working on personal
+                projects, and volunteering for non-profit organization to
+                redesign their websites. <br />
+                <br />I want to give special thanks to Daniel Scott and his
+                business BringYourOwnLaptop.com for educating me about graphic
+                design and using Adobe Products.
               </p>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row mb-5">
+            <div className="col-md-6 mb-4">
+              <Card id="home-card" className=" h-100">
+                <CardImg
+                  top
+                  src="/assets/icons/react.svg"
+                  alt="React Logo"
+                  id="home-card-img"
+                  className="mx-auto"
+                ></CardImg>
+                <CardTitle className="text-center my-3">
+                  <h4>Full-Stack Developer</h4>
+                </CardTitle>
+                <CardBody className="p-0">
+                  <CardText className="text-center">
+                    <div className="mb-4">
+                      <h5 className="mb-5">
+                        Bringing ideas to reality one line of code at a time.
+                      </h5>
+
+                      <h6>My Coding Languages:</h6>
+                      <p>
+                        HTML, CSS3, JavaScript, React, Sass, Node, MongoDB, SQL
+                      </p>
+                    </div>
+                    <div>
+                      <h6>Dev Arsenal:</h6>
+                      <ul className="list-unstyled">
+                        <li className="py-1">Visual Studio</li>
+                        <li className="py-1">GitHub</li>
+                        <li className="py-1">CodePen</li>
+                        <li className="py-1">Repl.it</li>
+                        <li className="py-1">Bootstrap</li>
+                        <li className="py-1">ReactStrap</li>
+                      </ul>
+                    </div>
+                  </CardText>
+                </CardBody>{' '}
+              </Card>
+            </div>
+            <div className="col-md-6 mb-4">
+              <Card id="home-card" className="h-100">
+                <CardImg
+                  top
+                  src="/assets/images/pen-tool.svg"
+                  alt="React Logo"
+                  id="home-card-img"
+                  className="mx-auto"
+                ></CardImg>
+                <CardTitle className="text-center my-3">
+                  <h4>Designer</h4>
+                </CardTitle>
+                <CardBody className="p-0">
+                  <CardText className="text-center">
+                    <div className="mb-4">
+                      <h5 className="mb-5">You imagine it, I will create it</h5>
+
+                      <h6>Things I design</h6>
+                      <p>
+                        MockUps, Logos, Business Cards, Books & long documents
+                        and more
+                      </p>
+                    </div>
+                    <div>
+                      <h6>Designer Toolset:</h6>
+                      <ul className="list-unstyled">
+                        <li className="py-1">Adobe XD</li>
+                        <li className="py-1">Adobe Illustrator</li>
+                        <li className="py-1">Adobe Photoshop</li>
+                        <li className="py-1">Adobe InDesign</li>
+                      </ul>
+                    </div>
+                  </CardText>
+                </CardBody>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="servicesAtGlance" className="mb-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 text-center">
+              <h1 className=" mb-5">Services At A Glance</h1>
+            </div>
+            <div className="col-md-4 mb-4 text-center">
+              <Card id="home-card-alt" className="h-100">
+                <CardImg
+                  top
+                  src="/assets/images/pen.jpg"
+                  alt="Pen"
+                  className="rounded-circle mx-auto"
+                  id="home-card-img"
+                ></CardImg>
+                <CardTitle className="mt-3">
+                  <h4>Website Design</h4>
+                </CardTitle>
+                <CardBody>
+                  <CardText className="mb-5 text-justify">
+                    Expands your company reach by having a custom website
+                    designed for you that sucessfully spreads your brand and
+                    services to your target audience.
+                  </CardText>
+                  <Link
+                    to="/portfolio"
+                    className="btn btn-lg btn-site-gold"
+                    id="learnMore"
+                  >
+                    Learn More
+                  </Link>
+                </CardBody>
+              </Card>
+            </div>
+            <div className="col-md-4 mb-4 text-center">
+              <Card id="home-card-alt" className="h-100">
+                <CardImg
+                  top
+                  src="/assets/images/html.svg"
+                  alt="Code Brackets"
+                  className="rounded-circle mx-auto"
+                  id="home-card-img"
+                ></CardImg>
+                <CardTitle className="mt-3">
+                  <h4>Website Development</h4>
+                </CardTitle>
+                <CardBody>
+                  <CardText className="mb-5 text-justify">
+                    The web development process is taking designs and
+                    translating them to code. The sites I produce can range from
+                    simple static sites to websites with complete backend logic
+                    to include things such as authentication, secure payments
+                    and more.
+                  </CardText>
+                  <Link
+                    to="/portfolio"
+                    className="btn btn-lg btn-site-gold"
+                    id="learnMore"
+                  >
+                    Learn More
+                  </Link>
+                </CardBody>
+              </Card>
+            </div>
+            <div className="col-md-4 mb-4 text-center">
+              <Card id="home-card-alt" className="h-100">
+                <CardImg
+                  top
+                  src="/assets/images/responsive.svg"
+                  alt="Code Brackets"
+                  className="rounded-circle mx-auto"
+                  id="home-card-img"
+                ></CardImg>
+                <CardTitle className="mt-3">
+                  <h4>Responsive Design</h4>
+                </CardTitle>
+                <CardBody>
+                  <CardText className="mb-5 text-justify">
+                    In the age of mobile technology, web traffic is dominated by
+                    users that are on the go. Responsive web design ensures your
+                    website is optimized for all screen sizes.
+                  </CardText>
+                  <Link
+                    to="/portfolio"
+                    className="btn btn-lg btn-site-gold"
+                    id="learnMore"
+                  >
+                    Learn More
+                  </Link>
+                </CardBody>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="consult" className="my-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 d-flex justify-content-center align-items-center mb-4 ">
+              <h3 className="d-inline px-0">Interested in working together?</h3>
+            </div>
+            <div className="col-md-6">
+              <Link
+                to="/contact"
+                className="btn btn-lg btn-site-gold btn-block text-uppercase"
+              >
+                Contact Me
+              </Link>
             </div>
           </div>
         </div>

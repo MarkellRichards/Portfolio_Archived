@@ -1,24 +1,30 @@
 import React from 'react';
-import {
-  Card,
-  CardImg,
-  //   CardImgOverlay,
-  Breadcrumb,
-  BreadcrumbItem,
-  UncontrolledCarousel,
-} from 'reactstrap';
+import { Breadcrumb, BreadcrumbItem, UncontrolledCarousel } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 function RenderWeb({ project }) {
   if (project) {
     return (
       <>
-        <div className="col-md-5 offset-md-1 my-3">
-          <Card>
-            <CardImg top src={project.image} alt={project.title} />
-          </Card>
+        <div className="col-md-5 offset-md-1 my-3 text-center">
+          <img src={project.image} alt={project.title} className="img-fluid" />
+
+          <a
+            href={project.site}
+            className="btn btn-md btn-site btn-site-primary m-2"
+          >
+            <i className="fa fa-globe"></i>
+          </a>
+          <a
+            href={project.github}
+            className="btn btn-md btn-site btn-site-secondary m-2"
+          >
+            <i className="fa fa-github"></i>
+          </a>
         </div>
         <div className="col-md-5 my-3">
+          <h2>Description</h2>
+          <p>{project.description}</p>
           <h2>My Role</h2>
           <p>{project.role}</p>
 

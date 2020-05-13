@@ -5,6 +5,8 @@ export const PROJECTS = [
     title: 'Portfolio',
     site: 'https://www.markellrichards.com/',
     github: 'https://github.com/MarkellRichards/Portfolio',
+    description:
+      'A multi-paged portfolio project created using React. The color scheme of the website is blue, gold, & white. The typography choice for headers is Open-Sans and the body copy is Raleway. My portfolio site was my first React application and helped hammer in key concept related to React and Vanilla JavaScript.',
     role:
       'I was in charge of the entire project. I started by creating my own brand identity, created logo, color scheme, typography, and mock-up wireframes. Then I converted my design to a full web page using React',
     difficulties:
@@ -15,6 +17,7 @@ export const PROJECTS = [
     notable: ['Dynamic Routing', 'Responsive'],
     category: 'web',
   },
+
   {
     id: 1,
     image: [

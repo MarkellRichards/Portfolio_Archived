@@ -34,7 +34,7 @@ function About(props) {
                 am blessed with a loving wife and two amazing daughters.
               </p>
 
-              <Button className="btn btn-lg btn-site btn-site-primary">
+              <Button className="btn btn-lg btn-site-gold">
                 Download Resume
               </Button>
             </div>

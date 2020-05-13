@@ -63,25 +63,27 @@ function Portfolio(props) {
     });
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col text-center mt-4 text-uppercase">
-          <h1>Portfolio</h1>
+    <>
+      <div className="container">
+        <div className="row">
+          <div className="col text-center mt-4 text-uppercase">
+            <h1 className="custom-text-primary">Portfolio</h1>
+          </div>
+        </div>
+        <div className="row mb-3">
+          <div className="col-12 text-center my-4">
+            <h2 className="custom-text-primary">Web Development</h2>
+          </div>
+          {web}
+        </div>
+        <div className="row mb-5">
+          <div className="col-12 text-center my-4">
+            <h2 className="custom-text-primary">Graphic & UI/UX Design</h2>
+          </div>
+          {graphic}
         </div>
       </div>
-      <div className="row">
-        <div className="col-12 text-center my-4">
-          <h2>Web Development</h2>
-        </div>
-        {web}
-      </div>
-      <div className="row">
-        <div className="col-12 text-center my-4">
-          <h2>Graphic & UI/UX Design</h2>
-        </div>
-        {graphic}
-      </div>
-    </div>
+    </>
   );
 }
 

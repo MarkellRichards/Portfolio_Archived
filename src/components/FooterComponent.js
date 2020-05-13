@@ -11,7 +11,7 @@ function Footer(props) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa fa-github"></i>
+              <i className="fa fa-github footer-icon"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/markell-richards-7682ab170/"
@@ -19,7 +19,7 @@ function Footer(props) {
               rel="noopener noreferrer"
             >
               {' '}
-              <i className="fa fa-linkedin-square"></i>
+              <i className="fa fa-linkedin-square footer-icon"></i>
             </a>
           </div>
         </div>
