@@ -111,8 +111,8 @@ a {
 }
 
 #home-card-img {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 }
 .btn-site {
   font-size: 1.5rem;
@@ -200,8 +200,8 @@ a {
 
 /* Services */
 #services {
-  background: url('/assets/images/services.jpg') no-repeat center center;
-  background-size: cover;
+  /* background: url('/assets/images/services.jpg') no-repeat center center;
+  background-size: cover; */
 }
 
 .card {

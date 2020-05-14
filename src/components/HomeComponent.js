@@ -32,7 +32,7 @@ function RenderService({ service }) {
 function Home(props) {
   const services = props.services.slice(0, 3).map((service) => {
     return (
-      <div key={service.id} className="col-md-4 mb-3">
+      <div key={service.id} className="col-md-4 mb-5 text-center">
         <RenderService service={service} />
       </div>
     );

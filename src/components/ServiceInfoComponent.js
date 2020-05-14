@@ -20,7 +20,7 @@ function ServiceInfo(props) {
         </div>
       </div>
       <div className="container-fluid">
-        <div className="row">Test</div>
+        <div className="row">{props.service.description}</div>
       </div>
     </>
   );

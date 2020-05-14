@@ -11,12 +11,16 @@ function RenderWeb({ project }) {
 
           <a
             href={project.site}
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn btn-md btn-site btn-site-primary m-2"
           >
             <i className="fa fa-globe"></i>
           </a>
           <a
             href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn btn-md btn-site btn-site-secondary m-2"
           >
             <i className="fa fa-github"></i>
