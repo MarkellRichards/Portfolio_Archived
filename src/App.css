@@ -152,15 +152,9 @@ a {
 }
 
 .btn-site-gold {
-  color: white;
-  background: linear-gradient(
-    158deg,
-    rgba(225, 199, 130, 1) 0%,
-    rgba(225, 199, 130, 1) 15%,
-    rgba(0, 0, 0, 1) 80%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  box-shadow: 0 20px 40px rgba(225, 199, 130, 0.5);
+  color: #00153d;
+  background: rgba(225, 190, 130, 1);
+  box-shadow: 0 10px 30px rgba(225, 199, 130, 0.5);
   transition: 0.3s ease-in-out;
 }
 

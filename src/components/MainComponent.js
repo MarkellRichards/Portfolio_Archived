@@ -8,6 +8,7 @@ import About from './AboutComponent';
 import Portfolio from './PortfolioComponent';
 import ProjectInfo from './ProjectInfoComponent';
 import Services from './ServicesComponent';
+import ServiceInfo from './ServiceInfoComponent';
 import Contact from './ContactComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 // import Portfolio from './PortfolioComponent';
@@ -33,17 +34,34 @@ class Main extends Component {
         />
       );
     };
+
+    const ServiceInfoPage = ({ match }) => {
+      return (
+        <ServiceInfo
+          service={
+            this.state.services.filter(
+              (service) => service.id === +match.params.serviceID
+            )[0]
+          }
+        />
+      );
+    };
     return (
       <div>
         <Header />
         <Switch>
-          <Route path="/home" component={Home} />
+          <Route
+            exact
+            path="/home"
+            render={() => <Home services={this.state.services} />}
+          />
           <Route path="/about" component={About} />
           <Route
             exact
             path="/services"
             render={() => <Services services={this.state.services} />}
           />
+          <Route path="/services/:serviceID" component={ServiceInfoPage} />
           <Route
             exact
             path="/portfolio"
