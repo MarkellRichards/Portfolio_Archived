@@ -43,5 +43,7 @@ export const PROJECTS = [
     title: 'Business Card',
     technology: ['Adobe Illustrator', 'Adobe InDesign'],
     category: 'graphic',
+    description:
+      'I completed this business card as part of my InDesign Course class project. I used Adobe Illustrator to design the logo, and InDesign to place the content. ',
   },
 ];

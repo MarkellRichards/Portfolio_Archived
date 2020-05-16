@@ -16,7 +16,7 @@ function RenderService({ service }) {
         <h4>{service.title}</h4>
       </CardTitle>
       <CardBody>
-        <CardText className="mb-5 text-justify">{service.front}</CardText>
+        <CardText className="mb-5">{service.front}</CardText>
         <Link
           to={`/services/${service.id}`}
           className="btn btn-lg btn-site-gold"
@@ -43,8 +43,8 @@ function Services(props) {
       <section id="services">
         <div className="container">
           <div className="row">
-            <div className="col-12 text-center mt-3">
-              <h1 className="font-weight-bold">Services</h1>
+            <div className="col-12 text-center my-5">
+              <h1 className="custom-text-primary text-uppercase">Services</h1>
             </div>
           </div>
 

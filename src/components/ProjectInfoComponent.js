@@ -59,9 +59,16 @@ function RenderWeb({ project }) {
 function RenderGraphic({ project }) {
   if (project) {
     return (
-      <div className="col-md-5 offset-md-1 my-3">
-        <UncontrolledCarousel items={project.image} indicators={false} />
-      </div>
+      <>
+        <div className="col-md-6  my-3">
+          <UncontrolledCarousel items={project.image} indicators={false} />
+        </div>
+        <div className="col-md-6 my-3">
+          <h1>Description</h1>
+          <hr />
+          <p>{project.description}</p>
+        </div>
+      </>
     );
   }
   return <div />;
@@ -109,7 +116,7 @@ function ProjectInfo(props) {
             </div>
           </div>
         </div>
-        <div className="container-fluid">
+        <div className="container">
           <div className="row mb-5" id="graphicInfo">
             <RenderGraphic project={props.project} />
           </div>

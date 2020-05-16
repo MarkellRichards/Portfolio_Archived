@@ -158,6 +158,20 @@ a {
   transition: 0.3s ease-in-out;
 }
 
+.btn-site-blue {
+  color: #fff;
+  background: #00153d;
+  box-shadow: 0 10px 30px rgba(225, 225, 225, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.btn-site-blue:hover {
+  color: #00153d;
+  background: rgba(225, 190, 130, 1);
+  box-shadow: 0 10px 30px rgba(225, 199, 130, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
 .btn-site-gold:hover {
   color: white;
   background: linear-gradient(
@@ -180,6 +194,13 @@ a {
 }
 /* story */
 
+#service-img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Education */
 #education {
   background: url('/assets/images/macbook.jpg') no-repeat center center;
@@ -198,10 +219,22 @@ a {
   background: white;
 }
 
-/* Services */
-#services {
-  /* background: url('/assets/images/services.jpg') no-repeat center center;
-  background-size: cover; */
+.list-group-item {
+  background: linear-gradient(
+    220deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 21, 48, 1) 75%,
+    rgba(0, 21, 48, 1) 93%
+  );
+}
+
+.list-group-item:hover {
+  background: rgba(225, 190, 130, 1);
+}
+
+.list-group-item a {
+  color: white;
 }
 
 .card {
@@ -212,6 +245,15 @@ a {
   height: 100px;
   width: 100px;
 }
+
+/* 
+.breadcrumb {
+  background: #e1c782;
+}
+
+.breadcrumb-item::before {
+  color: #00153d;
+} */
 
 .card-title {
   margin: 0;
@@ -224,18 +266,8 @@ a {
 }
 
 .site-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  background: linear-gradient(
-    220deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 10%,
-    rgba(0, 21, 48, 1) 75%,
-    rgba(0, 21, 48, 1) 93%
-  );
-  padding: 25px 0;
+  background-image: linear-gradient(#00153d, white);
+  padding: 20px 0;
 }
 
 .site-footer a {

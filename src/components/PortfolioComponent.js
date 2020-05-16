@@ -15,14 +15,14 @@ function RenderWebProject({ project }) {
         <CardLink
           href={project.site}
           target="_blank"
-          className="btn btn-success"
+          className="btn btn-md btn-site-primary"
         >
           View Site
         </CardLink>
         <CardLink
           href={project.github}
           target="_blank"
-          className="btn btn-outline-primary"
+          className="btn btn-md btn-site-secondary"
         >
           View GitHub
         </CardLink>

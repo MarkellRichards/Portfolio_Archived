@@ -38,6 +38,7 @@ class Main extends Component {
     const ServiceInfoPage = ({ match }) => {
       return (
         <ServiceInfo
+          services={this.state.services}
           service={
             this.state.services.filter(
               (service) => service.id === +match.params.serviceID
