@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'reactstrap';
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -18,6 +18,20 @@ function About(props) {
               <h2 className="mt-5 custom-text-primary">Hello</h2>
               <h2 className="mb-4 custom-text-primary">I am Markell</h2>
               <p className="text-justify mb-5 px-4">
+                I just started my journey as a freelance graphic designer and
+                web developer. Throughout my journey, I have had opportunities
+                to grow as a developer by attending a full-stack developer
+                bootcamp, utilizing my STEM education, working on personal
+                projects, and volunteering for non-profit organization to
+                redesign their websites. <br />
+                <br />I want to give special thanks to Daniel Scott and his
+                business{' '}
+                <a href="https://www.bringyourownlaptop.com/">
+                  BringYourOwnLaptop.com
+                </a>{' '}
+                for educating me about graphic design and using Adobe Products.
+              </p>
+              <p className="text-justify mb-5 px-4">
                 I specialize in <strong>React</strong>, <strong>Node.js</strong>
                 , and <strong>MongoDB</strong> to deliver the full-stack
                 services your websites and mobile apps need. Furthermore, I use
@@ -34,17 +48,19 @@ function About(props) {
                 am blessed with a loving wife and two amazing daughters.
               </p>
 
-              <Button className="btn btn-lg btn-site-gold">
+              <a
+                className="btn btn-lg btn-site-gold"
+                href="files/Resume Draft.pdf"
+                type="application/pdf"
+                target="_blank"
+              >
                 Download Resume
-              </Button>
+              </a>
             </div>
-            <div className="col-md-6 d-none d-md-block">
-              <img
-                src="./assets/images/resources.jpg"
-                alt="Scholar"
-                className="img-fluid"
-              />
-            </div>
+            <div
+              className="col-md-6 d-none d-md-block"
+              id="about-picture"
+            ></div>
           </div>
         </div>
       </section>

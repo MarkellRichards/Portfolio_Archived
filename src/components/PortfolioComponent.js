@@ -15,7 +15,7 @@ function RenderWebProject({ project }) {
         <CardLink
           href={project.site}
           target="_blank"
-          className="btn btn-md btn-site-primary"
+          className="btn btn-md btn-site-gold"
         >
           View Site
         </CardLink>

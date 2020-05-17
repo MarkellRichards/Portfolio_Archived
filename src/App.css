@@ -3,12 +3,15 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   overflow-x: hidden;
+  background: #f5f5f5;
 }
 
 h1,
 h2,
-h3 {
-  font-family: 'Open Sans', sans-serif;
+h3,
+h4,
+h5 {
+  font-family: 'Playfair Display', sans-serif;
 }
 
 a {
@@ -17,7 +20,7 @@ a {
 
 /* Typography */
 .custom-text-primary {
-  color: #00275a;
+  color: #00153d;
 }
 
 /* Header Component */
@@ -114,47 +117,18 @@ a {
   height: 150px;
   width: 150px;
 }
+
+/* Buttons */
 .btn-site {
   font-size: 1.5rem;
   padding: 10px 40px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-.btn-site-secondary {
-  color: white;
-  background-color: #00275a;
-  transition: 0.5s ease-in-out;
-}
-
-.btn-site-secondary:hover {
-  color: rgba(225, 199, 130, 1);
-  background: #00275a;
-  box-shadow: 0 20px 40px rgba(225, 199, 130, 0.5);
-}
-
-.btn-site-primary {
-  color: #00275a;
-  background-color: rgba(225, 199, 130, 1);
-  /* border: 2px solid rgba(225, 199, 130, 1); */
-  transition: 0.5s ease-in-out;
-}
-
-.btn-site-primary:hover {
-  color: white;
-  background: linear-gradient(
-    220deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 10%,
-    rgba(0, 21, 48, 1) 75%,
-    rgba(0, 21, 48, 1) 93%
-  );
-  box-shadow: 0 20px 40px rgba(225, 255, 255, 0.5);
-}
-
 .btn-site-gold {
   color: #00153d;
   background: rgba(225, 190, 130, 1);
-  box-shadow: 0 10px 30px rgba(225, 199, 130, 0.5);
+  /* box-shadow: 0 5px 30px rgba(225, 199, 130, 0.5); */
   transition: 0.3s ease-in-out;
 }
 
@@ -181,26 +155,14 @@ a {
     rgba(0, 21, 48, 1) 75%,
     rgba(0, 21, 48, 1) 93%
   );
-  box-shadow: 0 20px 40px rgba(225, 255, 255, 0.5);
+  box-shadow: 0 10px 30px rgba(225, 255, 255, 0.5);
 }
 
-.responsive-hero-img {
-  width: 100%;
-  height: auto;
-  max-width: 500px;
+#about-picture {
+  background: url('/assets/images/resources.jpg') no-repeat center center;
+  background-size: cover;
 }
-#main-nav {
-  background: none;
-}
-/* story */
 
-#service-img {
-  width: 100%;
-  height: auto;
-  max-height: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
 /* Education */
 #education {
   background: url('/assets/images/macbook.jpg') no-repeat center center;
@@ -219,6 +181,17 @@ a {
   background: white;
 }
 
+/* Services */
+
+#service-img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* List */
 .list-group-item {
   background: linear-gradient(
     220deg,
@@ -237,6 +210,7 @@ a {
   color: white;
 }
 
+/* cards */
 .card {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
 }
@@ -245,15 +219,6 @@ a {
   height: 100px;
   width: 100px;
 }
-
-/* 
-.breadcrumb {
-  background: #e1c782;
-}
-
-.breadcrumb-item::before {
-  color: #00153d;
-} */
 
 .card-title {
   margin: 0;
@@ -265,9 +230,14 @@ a {
   font-weight: bold;
 }
 
+#graphicInfo {
+  padding-bottom: 50px;
+}
+
+/* Footer */
 .site-footer {
   background-image: linear-gradient(#00153d, white);
-  padding: 20px 0;
+  padding: 50px 0;
 }
 
 .site-footer a {
@@ -286,6 +256,8 @@ a {
   opacity: 0.7;
 }
 
+/* Carousel */
+
 .carousel-caption {
   opacity: 0;
 }
@@ -294,6 +266,21 @@ a {
   height: 100%;
 }
 
-#graphicInfo {
-  padding-bottom: 50px;
+/* CSSTRANSITION */
+.page-enter {
+  opacity: 0;
+}
+
+.page-enter-active {
+  opacity: 1;
+  transition: 300ms ease-in;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: 300ms ease-out;
 }

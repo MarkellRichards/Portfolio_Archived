@@ -10,7 +10,8 @@ import ProjectInfo from './ProjectInfoComponent';
 import Services from './ServicesComponent';
 import ServiceInfo from './ServiceInfoComponent';
 import Contact from './ContactComponent';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 // import Portfolio from './PortfolioComponent';
 
 class Main extends Component {
@@ -50,32 +51,40 @@ class Main extends Component {
     return (
       <div>
         <Header />
-        <Switch>
-          <Route
-            exact
-            path="/home"
-            render={() => <Home services={this.state.services} />}
-          />
-          <Route path="/about" component={About} />
-          <Route
-            exact
-            path="/services"
-            render={() => <Services services={this.state.services} />}
-          />
-          <Route path="/services/:serviceID" component={ServiceInfoPage} />
-          <Route
-            exact
-            path="/portfolio"
-            render={() => <Portfolio projects={this.state.projects} />}
-          />
-          <Route path="/portfolio/:projectID" component={ProjectInfoPage} />
-          <Route path="/contact" component={Contact} />
-          <Redirect to="/home" />
-        </Switch>
+        <TransitionGroup>
+          <CSSTransition
+            key={this.props.location.key}
+            classNames="page"
+            timeout={500}
+          >
+            <Switch>
+              <Route
+                exact
+                path="/home"
+                render={() => <Home services={this.state.services} />}
+              />
+              <Route path="/about" component={About} />
+              <Route
+                exact
+                path="/services"
+                render={() => <Services services={this.state.services} />}
+              />
+              <Route path="/services/:serviceID" component={ServiceInfoPage} />
+              <Route
+                exact
+                path="/portfolio"
+                render={() => <Portfolio projects={this.state.projects} />}
+              />
+              <Route path="/portfolio/:projectID" component={ProjectInfoPage} />
+              <Route path="/contact" component={Contact} />
+              <Redirect to="/home" />
+            </Switch>
+          </CSSTransition>
+        </TransitionGroup>
         <Footer />
       </div>
     );
   }
 }
 
-export default Main;
+export default withRouter(Main);

@@ -7,7 +7,7 @@ import {
   Navbar,
   NavbarBrand,
 } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 class Header extends Component {
   constructor(props) {
@@ -30,13 +30,15 @@ class Header extends Component {
     return (
       <Navbar dark sticky="top" expand="md">
         <div className="container">
-          <NavbarBrand className="mr-auto" href="/">
-            <img
-              src="/assets/images/logoOutline.svg"
-              height="auto"
-              width="60"
-              alt="MR Logo"
-            />
+          <NavbarBrand className="mr-auto">
+            <Link to="/home">
+              <img
+                src="/assets/images/logoOutline.svg"
+                height="auto"
+                width="60"
+                alt="MR Logo"
+              />
+            </Link>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggleNav} />
           <Collapse

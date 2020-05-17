@@ -5,7 +5,7 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'typeface-raleway';
-import 'typeface-open-sans';
+import 'typeface-playfair-display';
 import 'font-awesome/css/font-awesome.css';
 import 'bootstrap-social/bootstrap-social.css';
 import 'react-vertical-timeline-component/style.min.css';

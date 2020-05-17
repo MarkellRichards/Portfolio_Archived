@@ -22,22 +22,16 @@ export const PROJECTS = [
     id: 1,
     image: [
       {
-        src: '/assets/images/my-business-card.png',
-        alt: 'Slide 1',
-        caption: 'Mock-Up',
-        key: '1',
-      },
-      {
         src: '/assets/images/front-bsn-card.jpg',
         alt: 'Slide 2',
         caption: 'Front',
-        key: '2',
+        key: '1',
       },
       {
         src: '/assets/images/back-bsn-card.jpg',
         alt: 'Slide 3',
         caption: 'Back',
-        key: '3',
+        key: '2',
       },
     ],
     title: 'Business Card',

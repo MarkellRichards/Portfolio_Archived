@@ -15,7 +15,7 @@ function ServiceInfo(props) {
                 </BreadcrumbItem>
                 <BreadcrumbItem active>{props.service.title}</BreadcrumbItem>
               </Breadcrumb>
-              <h2>{props.service.title}</h2>
+              <h2 className="custom-text-primary">{props.service.title}</h2>
               <hr />
             </div>
           </div>
@@ -37,7 +37,7 @@ function ServiceInfo(props) {
                 className=""
                 id="service-img"
               />
-              <h2 className="my-3">What I offer</h2>
+              <h2 className="my-3 custom-text-primary">What I offer</h2>
               <ul className="list-unstyled">
                 {props.service.offer.map((item) => (
                   <li key={item.id}>- {item}</li>
@@ -45,7 +45,7 @@ function ServiceInfo(props) {
               </ul>
             </div>
             <div className="col-md-4 text-center mb-4">
-              <h3>Other Services</h3>
+              <h3 className="custom-text-primary">Other Services</h3>
               <ul className="list-group">
                 {props.services.map((item) => (
                   <li key={item.id} className="list-group-item">

@@ -9,6 +9,12 @@ import {
   FormFeedback,
 } from 'reactstrap';
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
+
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -25,6 +31,8 @@ class Contact extends Component {
         email: false,
       },
     };
+
+    this.baseStae = this.state;
 
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -61,6 +69,21 @@ class Contact extends Component {
     });
   };
 
+  handleClearForm(e) {
+    this.setState({
+      fullName: '',
+      phoneNum: '',
+      email: '',
+      contactType: 'By Phone',
+      feedback: '',
+      touched: {
+        fullName: false,
+        phoneNum: false,
+        email: false,
+      },
+    });
+  }
+
   handleInputChange(event) {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
@@ -71,11 +94,18 @@ class Contact extends Component {
     });
   }
 
-  handleSubmit(event) {
-    console.log('Current state is: ' + JSON.stringify(this.state));
-    alert('Current state is: ' + JSON.stringify(this.state));
-    event.preventDefault(); //Stops page reload
-  }
+  handleSubmit = (e) => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...this.state }),
+    })
+      .then(() => alert('Success!'))
+      .catch((error) => alert(error));
+    this.handleClearForm(e);
+    e.preventDefault();
+  };
+
   render() {
     const errors = this.validate(
       this.state.fullName,
@@ -88,12 +118,14 @@ class Contact extends Component {
         <div className="container">
           <div className="row row-content">
             <div className="col-12 text-center mt-3">
-              <h1 className="my-3">Let's Talk!</h1>
-              <h4 classname="mt-3">I will respond within two business days</h4>
+              <h1 className="custom-text-primary my-3">Let's Talk!</h1>
+              <h4 className="custom-text-primary my-3">
+                I will respond within two business days
+              </h4>
               <hr />
             </div>
             <div className="col-md-10">
-              <Form onSubmit={this.handleSubmit}>
+              <Form onSubmit={this.handleSubmit} data-netlify-recaptcha="true">
                 <FormGroup row>
                   <Label htmlFor="fullName" md={2}>
                     Name
@@ -184,7 +216,8 @@ class Contact extends Component {
                     md={{ size: 10, offset: 2 }}
                     className="text-center mt-3 mb-5"
                   >
-                    <Button type="submit" className="btn-site btn-site-primary">
+                    <div data-netlify-recaptcha="true"></div>
+                    <Button type="submit" className="btn-site btn-site-gold">
                       Submit
                     </Button>
                   </Col>

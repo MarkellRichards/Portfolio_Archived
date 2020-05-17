@@ -27,24 +27,24 @@ function RenderWeb({ project }) {
           </a>
         </div>
         <div className="col-md-5 my-3">
-          <h2>Description</h2>
+          <h2 className="custom-text-primary">Description</h2>
           <p>{project.description}</p>
-          <h2>My Role</h2>
+          <h2 className="custom-text-primary">My Role</h2>
           <p>{project.role}</p>
 
-          <h2>Project Difficulties</h2>
+          <h2 className="custom-text-primary">Project Difficulties</h2>
           <p>{project.difficulties}</p>
 
-          <h2>My Solution</h2>
+          <h2 className="custom-text-primary">My Solution</h2>
           <p>{project.solution}</p>
 
-          <h2>Technology Used</h2>
+          <h2 className="custom-text-primary">Technology Used</h2>
           <ul>
             {project.technology.map((tech) => (
               <li key={tech}>{tech}</li>
             ))}
           </ul>
-          <h2>Notable Features</h2>
+          <h2 className="custom-text-primary">Notable Features</h2>
           <ul>
             {project.notable.map((notable) => (
               <li key={notable}>{notable}</li>
@@ -64,7 +64,7 @@ function RenderGraphic({ project }) {
           <UncontrolledCarousel items={project.image} indicators={false} />
         </div>
         <div className="col-md-6 my-3">
-          <h1>Description</h1>
+          <h2 className="custom-text-primary">Description</h2>
           <hr />
           <p>{project.description}</p>
         </div>
@@ -87,7 +87,7 @@ function ProjectInfo(props) {
                 </BreadcrumbItem>
                 <BreadcrumbItem active>{props.project.title}</BreadcrumbItem>
               </Breadcrumb>
-              <h2>{props.project.title}</h2>
+              <h1 className="custom-text-primary">{props.project.title}</h1>
               <hr />
             </div>
           </div>
@@ -111,7 +111,7 @@ function ProjectInfo(props) {
                 </BreadcrumbItem>
                 <BreadcrumbItem active>{props.project.title}</BreadcrumbItem>
               </Breadcrumb>
-              <h2>{props.project.title}</h2>
+              <h1 className="custom-text-primary">{props.project.title}</h1>
               <hr />
             </div>
           </div>

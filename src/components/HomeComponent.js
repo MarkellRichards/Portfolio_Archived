@@ -32,7 +32,7 @@ function RenderService({ service }) {
 function Home(props) {
   const services = props.services.slice(0, 3).map((service) => {
     return (
-      <div key={service.id} className="col-md-4 mb-5 text-center">
+      <div key={service.id} className="col-md-6 col-lg-4 mb-5 text-center">
         <RenderService service={service} />
       </div>
     );
@@ -63,19 +63,9 @@ function Home(props) {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
-              <h1 className="mt-3 custom-text-primary">Hello</h1>
-              <h1 className="mb-4 custom-text-primary">I am Markell</h1>
-              <p className="text-md-justify mb-5 px-4">
-                I just started my journey as a freelance graphic designer and
-                web developer. Throughout my journey, I have had opportunities
-                to grow as a developer by attending a full-stack developer
-                bootcamp, utilizing my STEM education, working on personal
-                projects, and volunteering for non-profit organization to
-                redesign their websites. <br />
-                <br />I want to give special thanks to Daniel Scott and his
-                business BringYourOwnLaptop.com for educating me about graphic
-                design and using Adobe Products.
-              </p>
+              <h2 className="my-5 custom-text-primary">
+                I listen to your ideas and make them a reality.
+              </h2>
             </div>
           </div>
         </div>
@@ -163,7 +153,9 @@ function Home(props) {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
-              <h1 className=" mb-5">Services At A Glance</h1>
+              <h1 className=" mb-5 custom-text-primary">
+                Services At A Glance
+              </h1>
             </div>
             {services}
           </div>
@@ -172,10 +164,10 @@ function Home(props) {
       <section id="consult" className="my-5">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 d-flex justify-content-center align-items-center mb-4 ">
+            <div className="col-md-6 d-flex justify-content-center align-items-center mb-4 pt-3 ">
               <h3 className="d-inline px-0">Interested in working together?</h3>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 py-3">
               <Link
                 to="/contact"
                 className="btn btn-lg btn-site-gold btn-block text-uppercase"
