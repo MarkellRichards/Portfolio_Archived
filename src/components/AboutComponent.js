@@ -163,7 +163,7 @@ function About(props) {
             </h4>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+            iconStyle={{ background: 'rgb(0, 0, 0)', color: '#fff' }}
             icon={<StarIcon />}
           />
         </VerticalTimeline>

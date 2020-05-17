@@ -22,7 +22,7 @@ function RenderWebProject({ project }) {
         <CardLink
           href={project.github}
           target="_blank"
-          className="btn btn-md btn-site-secondary"
+          className="btn btn-md btn-site-blue"
         >
           View GitHub
         </CardLink>

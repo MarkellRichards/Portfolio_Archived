@@ -13,7 +13,7 @@ function RenderWeb({ project }) {
             href={project.site}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-md btn-site btn-site-primary m-2"
+            className="btn btn-md btn-site btn-site-gold m-2"
           >
             <i className="fa fa-globe"></i>
           </a>
@@ -21,7 +21,7 @@ function RenderWeb({ project }) {
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-md btn-site btn-site-secondary m-2"
+            className="btn btn-md btn-site btn-site-blue m-2"
           >
             <i className="fa fa-github"></i>
           </a>
