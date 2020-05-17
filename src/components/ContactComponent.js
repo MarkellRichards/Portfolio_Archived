@@ -102,6 +102,7 @@ class Contact extends Component {
     })
       .then(() => alert('Success!'))
       .catch((error) => alert(error));
+    console.log(this.state);
     this.handleClearForm(e);
     e.preventDefault();
   };
@@ -112,6 +113,8 @@ class Contact extends Component {
       this.state.phoneNum,
       this.state.email
     );
+
+    const { fullName, phoneNum, email, contactType, feedback } = this.state;
 
     return (
       <>
@@ -125,7 +128,7 @@ class Contact extends Component {
               <hr />
             </div>
             <div className="col-md-10">
-              <Form onSubmit={this.handleSubmit} data-netlify-recaptcha="true">
+              <Form onSubmit={this.handleSubmit}>
                 <FormGroup row>
                   <Label htmlFor="fullName" md={2}>
                     Name
@@ -136,7 +139,7 @@ class Contact extends Component {
                       id="fullName"
                       name="fullName"
                       placeholder="Name"
-                      value={this.state.fullName}
+                      value={fullName}
                       invalid={errors.fullName}
                       onBlur={this.handleBlur('fullName')}
                       onChange={this.handleInputChange}
@@ -154,7 +157,7 @@ class Contact extends Component {
                       id="phoneNum"
                       name="phoneNum"
                       placeholder="Phone number"
-                      value={this.state.phoneNum}
+                      value={phoneNum}
                       invalid={errors.phoneNum}
                       onBlur={this.handleBlur('phoneNum')}
                       onChange={this.handleInputChange}
@@ -172,7 +175,7 @@ class Contact extends Component {
                       id="email"
                       name="email"
                       placeholder="Email"
-                      value={this.state.email}
+                      value={email}
                       invalid={errors.email}
                       onBlur={this.handleBlur('email')}
                       onChange={this.handleInputChange}
@@ -188,7 +191,7 @@ class Contact extends Component {
                     <Input
                       type="select"
                       name="contactType"
-                      value={this.state.contactType}
+                      value={contactType}
                       onChange={this.handleInputChange}
                     >
                       <option>By Phone</option>
@@ -206,7 +209,7 @@ class Contact extends Component {
                       id="feedback"
                       name="feedback"
                       rows="12"
-                      value={this.state.feedback}
+                      value={feedback}
                       onChange={this.handleInputChange}
                     ></Input>
                   </Col>

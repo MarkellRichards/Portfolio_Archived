@@ -43,6 +43,14 @@ function Home(props) {
       <section id="showcase">
         <div className="container " id="showcase-container">
           <div className="row">
+            <div className="col-md-6 offset-md-6 mb-3">
+              <img
+                src="/assets/images/logoOutline.svg"
+                alt="Logo"
+                height="auto"
+                width="400"
+              />
+            </div>
             <div className="col-12 text-md-right">
               <h1 className="mt-3 mb-5 ">Designer & Full-Stack Developer</h1>
             </div>
