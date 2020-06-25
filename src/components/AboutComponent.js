@@ -36,7 +36,7 @@ function About(props) {
 
               <a
                 className="btn btn-lg btn-site-gold"
-                href="files/Resume Draft.pdf"
+                href="files/Resume.pdf"
                 type="application/pdf"
                 target="_blank"
               >
