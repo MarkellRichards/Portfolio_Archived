@@ -18,34 +18,19 @@ function About(props) {
               <h2 className="mt-5 custom-text-primary">Hello</h2>
               <h2 className="mb-4 custom-text-primary">I am Markell</h2>
               <p className="text-justify mb-5 px-4">
-                I just started my journey as a freelance graphic designer and
-                web developer. Throughout my journey, I have had opportunities
-                to grow as a developer by attending a full-stack developer
-                bootcamp, utilizing my STEM education, working on personal
-                projects, and volunteering for non-profit organization to
-                redesign their websites. <br />
-                <br />I want to give special thanks to Daniel Scott and his
-                business{' '}
-                <a href="https://www.bringyourownlaptop.com/">
-                  BringYourOwnLaptop.com
-                </a>{' '}
-                for educating me about graphic design and using Adobe Products.
-              </p>
-              <p className="text-justify mb-5 px-4">
-                I specialize in <strong>React</strong>, <strong>Node.js</strong>
-                , and <strong>MongoDB</strong> to deliver the full-stack
-                services your websites and mobile apps need. Furthermore, I use
-                a variety of Adobe products such as <strong>Adobe XD</strong>,{' '}
-                <strong>InDesign</strong>, <strong>Illustrator</strong>, and{' '}
-                <strong>Photoshop</strong> to deliever branding packages,
-                hi-fidelity wireframes, and other visual illustrations.
+                A few years ago while working on my Bachelor's I found my
+                passion for programming, particularly in Web and Mobile
+                development. I fell in love with the challenge, overcoming it,
+                and seeing the end result. In my free time, I enjoy watching
+                anime, working out, programming, and spending time with my wife
+                and two daughters. <br />
                 <br />
-                <br />I currently serve in the United States Air Force as a
-                mental health technician. I will be getting out in 2021 to
-                pursue my new career as a software engineer and graphic
-                designer. What lead me down this path is my passion for computer
-                science, love for programming, and the needs of my community. I
-                am blessed with a loving wife and two amazing daughters.
+                Throughout my journey, I have had opportunities to grow as a
+                developer by attending a full-stack developer bootcamp,
+                utilizing my STEM education, and working on various projects. I
+                study graphic design on the side so I can further enhance the
+                aesthetics of my apps.
+                <br />
               </p>
 
               <a

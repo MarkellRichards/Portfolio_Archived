@@ -40,4 +40,20 @@ export const PROJECTS = [
     description:
       'I completed this business card as part of my InDesign Course class project. I used Adobe Illustrator to design the logo, and InDesign to place the content. ',
   },
+  {
+    id: 2,
+    image: [
+      {
+        src: '/assets/images/GSA Letterhead.png',
+        alt: 'Slide 1',
+        caption: 'Front',
+        key: '1',
+      },
+    ],
+    title: 'Business Letterhead',
+    technology: ['Adobe Illustrator'],
+    category: 'graphic',
+    description:
+      'A client asked for a business letterhead. My wife designed the logo and I created the letterhead using Adobe Illustrator',
+  },
 ];

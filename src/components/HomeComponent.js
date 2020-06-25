@@ -99,19 +99,21 @@ function Home(props) {
                       </h5>
 
                       <h6>My Coding Languages:</h6>
-                      <p>
-                        HTML, CSS3, JavaScript, React, Sass, Node, MongoDB, SQL
-                      </p>
+                      <p>HTML, CSS, & JavaScript</p>
                     </div>
+                    <h6>Frameworks/Libraries I use:</h6>
+                    <p className="mb-4">React, Nextjs, Apollo, Bootstrap</p>
                     <div>
-                      <h6>Dev Arsenal:</h6>
+                      <h6>Stacks I am currently using:</h6>
                       <ul className="list-unstyled">
-                        <li className="py-1">Visual Studio</li>
-                        <li className="py-1">GitHub</li>
-                        <li className="py-1">CodePen</li>
-                        <li className="py-1">Repl.it</li>
-                        <li className="py-1">Bootstrap</li>
-                        <li className="py-1">ReactStrap</li>
+                        <li className="py-1">
+                          Nextjs Apollo GraphQL-Yoga Prisma
+                        </li>
+                        <li className="py-1">MongoDB Express React Node</li>
+                        <li className="py-1"></li>
+                        <li className="py-1"></li>
+                        <li className="py-1"></li>
+                        <li className="py-1"></li>
                       </ul>
                     </div>
                   </CardText>
