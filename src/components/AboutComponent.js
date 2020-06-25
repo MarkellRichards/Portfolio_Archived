@@ -17,6 +17,7 @@ function About(props) {
             <div className="col-md-6 text-center mb-5">
               <h2 className="mt-5 custom-text-primary">Hello</h2>
               <h2 className="mb-4 custom-text-primary">I am Markell</h2>
+
               <p className="text-justify mb-5 px-4">
                 A few years ago while working on my Bachelor's I found my
                 passion for programming, particularly in Web and Mobile

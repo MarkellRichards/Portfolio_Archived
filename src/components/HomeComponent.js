@@ -48,7 +48,7 @@ function Home(props) {
                 src="/assets/images/logoOutline.svg"
                 alt="Logo"
                 height="auto"
-                width="400"
+                width="300"
               />
             </div>
             <div className="col-12 text-md-right">

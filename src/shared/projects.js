@@ -54,6 +54,6 @@ export const PROJECTS = [
     technology: ['Adobe Illustrator'],
     category: 'graphic',
     description:
-      'A client asked for a business letterhead. My wife designed the logo and I created the letterhead using Adobe Illustrator',
+      'Client requested a business letterhead. My wife designed the logo and I created the letterhead in Adobe Illustrator',
   },
 ];
